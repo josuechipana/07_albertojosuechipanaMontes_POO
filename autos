@@ -1,0 +1,24 @@
+import javax.swing.JOptionPane;
+
+public class Auto {
+    //atributos
+    String marca;
+    String color;
+    int km;
+    
+    //metodo
+    public void acelerar (){
+        System.out.println("Auto de color "+color);
+    }
+    public void frenar (){
+        System.out.println("El auto que quiero "+marca);
+    }
+    public void sonido (){
+        System.out.println("El kilometraje del auto es "+ km);
+    }
+    public void pregunta(){
+       marca = JOptionPane.showInputDialog(null,"ingresa la marca");
+       color = JOptionPane.showInputDialog(null,"ingresa el color");
+       km = Integer.parseInt(JOptionPane.showInputDialog(null,"ingresa el kilometraje"));
+    }
+}
